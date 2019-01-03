@@ -28,4 +28,6 @@ For all version downloads, click [here to jump](#version-downloads) or scroll do
 
 ## Version Downloads
 
-[0.0.1-beta]: https://github.com/ravedaymond/WinSLink/raw/master/releases/winslink0.0.1-beta.tar.gz
+| Version    | Direct Download                                              |
+| ---------- | ------------------------------------------------------------ |
+| 0.0.1-beta | https://github.com/ravedaymond/WinSLink/raw/master/releases/winslink0.0.1-beta.tar.gz |

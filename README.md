@@ -1,4 +1,4 @@
-# ![WinSLink_Icon](C:\Users\daver\OneDrive\GitHub\WinSLink\assets\WinSLink_Icon.png)WinSLink - *A Windows Symbolic Link Utility*
+# ![WinSLink_Icon](https://raw.githubusercontent.com/ravedaymond/WinSLink/master/assets/WinSLink_Icon.png) WinSLink - *A Windows Symbolic Link Utility*
 [![](https://img.shields.io/badge/version-0.0.1--beta-green.svg)](https://github.com/ravedaymond/WinSLink/blob/master/CHANGELOG.md)[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ravedaymond/WinSLink/blob/master/LICENSE)
 
 *WinSLink* is a simple GUI tool for creating Symbolic Links for files or directories on Windows. 
