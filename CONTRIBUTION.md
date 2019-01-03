@@ -29,7 +29,7 @@ For example:
 
 #### Not sure about what label to use?
 
-If you are unsure what label to use for your issue, please use the <span style="background-color: #d876e3;">&nbsp;**question**&nbsp;</span> label. A contributor can then give it the proper label.
+If you are unsure what label to use for your issue, please use the ![1546548791683](https://raw.githubusercontent.com/ravedaymond/WinSLink/master/assets/1546548791683.png) label. A contributor can then give it the proper label.
 
 ### Feature
 
