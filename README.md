@@ -29,7 +29,7 @@ Any known issues or bugs can be found on the repositories [issue tracker](https:
 
 All releases are listed in the [changelog](https://github.com/ravedaymond/WinSLink/blob/master/CHANGELOG.md) with links to their respective download file.
 
-Alternatively, you can download the latest release by clicking [here]().
+Alternatively, you can download the latest release by clicking [here](https://github.com/ravedaymond/WinSLink/raw/master/releases/winslink0.0.1-beta.tar.gz).
 
 ## License
 

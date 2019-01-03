@@ -12,7 +12,7 @@ WinSLink is an application created using Visual C# through a Windows Form Applic
 
 ### Issue
 
-Ensure that the issue or bug was not already reported by searching GitHub under the projects [issue tracker](https://github.com/ravedaymond/WinSLink/issues). If you are unable to find an open issue that is already addressing the bug, feel free to open a [new issue]()!
+Ensure that the issue or bug was not already reported by searching GitHub under the projects [issue tracker](https://github.com/ravedaymond/WinSLink/issues). If you are unable to find an open issue that is already addressing the bug, feel free to open a [new issue](https://github.com/ravedaymond/WinSLink/issues/new)!
 
 Before opening the issue, keep the following in mind:
 
@@ -31,5 +31,5 @@ For example:
 
 Ensure that the feature is not already requested by searching GitHub under the projects [issue tracker](https://github.com/ravedaymond/WinSLink/issues).
 
-If you are unable to find an open feature request already addressing the feature in mind, feel free to open a new [feature request]()!
+If you are unable to find an open feature request already addressing the feature in mind, feel free to open a new feature request by adding the 'feature' tag to a [new issue](https://github.com/ravedaymond/WinSLink/issues/new).
 
