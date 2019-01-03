@@ -27,6 +27,10 @@ For example:
 - Screenshots for visible GUI issues.
 - The application version you are using.
 
+#### Not sure about what label to use?
+
+If you are unsure what label to use for your issue, please use the <span style="background-color: #d876e3;">&nbsp;**question**&nbsp;</span> label. A contributor can then give it the proper label.
+
 ### Feature
 
 Ensure that the feature is not already requested by searching GitHub under the projects [issue tracker](https://github.com/ravedaymond/WinSLink/issues).
