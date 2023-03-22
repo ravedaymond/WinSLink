@@ -1,7 +1,6 @@
 const { app, BrowserWindow, ipcMain, shell } = require('electron');
 const { dialog } = require('electron/main');
 
-
 /* ********************* */
 /* CONSTANTS AND GLOBALS */
 /* ********************* */
@@ -12,16 +11,19 @@ const paths = {
     css: path.join(__dirname, 'css'),
     svg: path.join(__dirname, 'css/svg'),
     res: path.join(__dirname, 'res'),
+    logs: path.join(__dirname, 'res/logs'),
+    templates: path.join(__dirname, 'res/templates'),
 }
-const profile = loadProfile();
-const settings = loadSettings();
+const profile = winslinkProfile();
+const settings = winslinkSettings();
+const logger = winslinkLogger();
 
 
 /* ********* */
 /* FUNCTIONS */
 /* ********* */
 
-function loadProfile() {
+const winslinkProfile = () => {
     const os = require('os');
     return {
         hostname: os.hostname(),
@@ -30,10 +32,10 @@ function loadProfile() {
     };
 }
 
-function loadSettings() {
+const winslinkSettings = () => {
     let settings = {
         path: path.join(paths.config, 'settings.json'),
-        default: path.join(paths.res, 'settings.default.json'),
+        default: path.join(paths.templates, 'settings.default.json'),
         load: {
             ok: true,
             showErr: () => { },
@@ -71,6 +73,20 @@ function loadSettings() {
     return settings;
 }
 
+const winslinkLogger = (log, ...args) => {
+    if(!log) { return; }
+    const util = require('util');
+    const fs = require('fs');
+    const os = require('os');
+    
+    args.forEach(arg => {
+        log = util.format(log, arg);
+    });
+    console.log(log);
+    const outStream = fs.createWriteStream(path.join(paths.logs, 'session.log'), { flags: 'a' });
+    outStream.write(util.format(new Date().toJSON(), `${log}${os.EOL}`));
+    outStream.close();
+}
 
 /* ***************** */
 /* IPC MAIN HANDLERS */
@@ -155,6 +171,14 @@ See [electron/electron#21972](https://github.com/electron/electron/pull/21972) f
 */
 app.enableSandbox();
 app.whenReady().then(() => {
+    /*
+    Timeout set for development debugging with VSCode.
+    Ensures that no lines of code will be skipped while the 
+        debugger is connecting.
+    */
+    setTimeout(() => {
+        console.debug('Timeout for debugger connection complete.');
+    }, 5000);
 
     if (!settings.load.ok) {
         const errResp = settings.load.showErr();
@@ -167,17 +191,6 @@ app.whenReady().then(() => {
             app.quit();
         }
     }
-    console.log(settings);
-
-
-    /*
-    Timeout set for development debugging with VSCode.
-    Ensures that no lines of code will be skipped while the 
-        debugger is connecting.
-    */
-    setTimeout(() => {
-        console.debug('Timeout for debugger connection complete.');
-    }, 5000);
 
     /* Create application window. */
     createWindow();
