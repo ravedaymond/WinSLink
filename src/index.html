@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta id="electron-info" content=""/>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="titlebar"></div>
+        <div class="content-container">
+            <div class="content">
+                <div class="content-dock">
+                    <div class="dock-actions dock-section">
+                        <div class="icon-button dock-button" icon-name="file-symlink">
+                            <div class="tooltip"></div>                            
+                        </div>
+                        <div class="icon-button dock-button" icon-name="folder-symlink">
+                            <div class="tooltip"></div>                            
+                        </div>
+                        <div class="icon-button dock-button" icon-name="folder-search">
+                            <div class="tooltip"></div>                            
+                        </div>
+                        <div class="icon-button dock-button" icon-name="terminal-square">
+                            <div class="tooltip"></div>                            
+                        </div>
+                        <div class="icon-button dock-button" icon-name="curly-braces">
+                            <div class="tooltip"></div>                            
+                        </div>
+                    </div>
+                    <div class="dock-settings dock-section">
+                        <div class="icon-button dock-button" icon-name="help-circle">
+                            <div class="tooltip"></div>                            
+                        </div>
+                        <div class="icon-button dock-button" icon-name="settings">
+                            <div class="tooltip"></div>                            
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="content-sidebar"></div>
+                <div class="content-workspace">
+                    <h1>Hello from Electron renderer!</h1>
+                    <p>👋</p>
+                    <p id="info"></p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="renderer.js"></script>
+
+</html>

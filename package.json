@@ -1,0 +1,35 @@
+{
+  "name": "winslink",
+  "version": "1.0.0",
+  "description": "A Symbolic Link manager for Windows.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^23.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravedaymond/WinSLink.git"
+  },
+  "keywords": [
+    "symbolic",
+    "link",
+    "manager",
+    "tool",
+    "gui",
+    "utility",
+    "windows"
+  ],
+  "author": "https://github.com/ravedaymond/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravedaymond/WinSLink/issues"
+  },
+  "homepage": "https://github.com/ravedaymond/WinSLink#readme",
+  "dependencies": {
+    "lucide": "^0.126.0"
+  }
+}
