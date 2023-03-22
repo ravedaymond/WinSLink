@@ -19,6 +19,9 @@
   /* Icons */
   --icon-size: 24px;
   --icon-stroke: 1.5;
+
+  /* Workspace */
+  --workspace-terminal-height-min: 200px;
 }
 
 html, body {
@@ -61,6 +64,7 @@ html, body {
 .content-container {
   display: flex;
   flex: 1 0 0;
+  flex-direction: row;
   width: 100%;
 }
 
@@ -102,4 +106,30 @@ html, body {
   stroke-width: var(--icon-stroke);
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-workspace {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.workspace {
+  height: 100%;
+}
+
+.workspace-terminal {
+  height: 100%;
 }
