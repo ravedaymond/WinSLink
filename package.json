@@ -29,7 +29,5 @@
     "url": "https://github.com/ravedaymond/WinSLink/issues"
   },
   "homepage": "https://github.com/ravedaymond/WinSLink#readme",
-  "dependencies": {
-    "lucide": "^0.126.0"
-  }
+  "dependencies": { }
 }
