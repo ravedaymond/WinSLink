@@ -23,7 +23,7 @@ const logger = winslinkLogger();
 /* FUNCTIONS */
 /* ********* */
 
-const winslinkProfile = () => {
+function winslinkProfile() {
     const os = require('os');
     return {
         hostname: os.hostname(),
@@ -32,7 +32,7 @@ const winslinkProfile = () => {
     };
 }
 
-const winslinkSettings = () => {
+function winslinkSettings() {
     let settings = {
         path: path.join(paths.config, 'settings.json'),
         default: path.join(paths.templates, 'settings.default.json'),
@@ -73,7 +73,7 @@ const winslinkSettings = () => {
     return settings;
 }
 
-const winslinkLogger = (log, ...args) => {
+function winslinkLogger(log, ...args) {
     if(!log) { return; }
     const util = require('util');
     const fs = require('fs');
