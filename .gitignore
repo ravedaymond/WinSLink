@@ -1,3 +1,6 @@
+# WinSLink Config
+config/*
+
 # Logs
 logs
 *.log
